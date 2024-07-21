@@ -1,0 +1,62 @@
+POST http://localhost:8103/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+POST http://localhost:8103/login/
+Content-Type: application/json
+
+{
+  "username": "JoeBiden",
+  "password": "biden@123"
+}
+
+
+###
+GET http://localhost:8103/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MjE1MzMxODV9.rRyJOmS1nwyE0r0o7aYgI9UWSknEh-NlYZqbBOPgtyY
+
+
+###
+GET http://localhost:8103/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MjE1MzMxODV9.rRyJOmS1nwyE0r0o7aYgI9UWSknEh-NlYZqbBOPgtyY
+
+
+####
+
+GET http://localhost:8103/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MjE1MzMxODV9.rRyJOmS1nwyE0r0o7aYgI9UWSknEh-NlYZqbBOPgtyY
+
+###
+GET http://localhost:8103/tweets/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MjE1MzMxODV9.rRyJOmS1nwyE0r0o7aYgI9UWSknEh-NlYZqbBOPgtyY
+
+###
+GET http://localhost:8103/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MjE1MzMxODV9.rRyJOmS1nwyE0r0o7aYgI9UWSknEh-NlYZqbBOPgtyY
+
+###
+GET http://localhost:8103/tweets/1/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MjE1MzMxODV9.rRyJOmS1nwyE0r0o7aYgI9UWSknEh-NlYZqbBOPgtyY
+
+###
+GET http://localhost:8103/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MjE1MzMxODV9.rRyJOmS1nwyE0r0o7aYgI9UWSknEh-NlYZqbBOPgtyY 
+
+###
+POST http://localhost:8103/user/tweets/
+Content-Type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MjE1MzMxODV9.rRyJOmS1nwyE0r0o7aYgI9UWSknEh-NlYZqbBOPgtyY 
+
+
+####
+DELETE http://localhost:8103/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwidXNlcklkIjoyLCJpYXQiOjE3MjE1MzMxODV9.rRyJOmS1nwyE0r0o7aYgI9UWSknEh-NlYZqbBOPgtyY 
+
+
